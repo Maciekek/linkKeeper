@@ -25,13 +25,11 @@
 
             var listView = document.getElementById("basicListView");
             listView.addEventListener("selectionchanging", this.showClickHandler, false);
-
-            try {
-                DataManager.read(roamingFolder);
-            } catch (e) {
-                console.log(e);
-                DataManager.read(roamingFolder);
-            }
+           
+           
+                DataManager.createFolder(roamingFolder);
+                
+            
         },
 
         addLinkButtonClickHandler: function (eventInfo) {

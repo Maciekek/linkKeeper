@@ -31,7 +31,7 @@
 
     var read = function (roamingFolder) {
         console.log("JESTEM READ");
-        try {
+        
             roamingFolder.getFileAsync("dataFile.txt")
             .then(function (sampleFile) {
                 return Windows.Storage.FileIO.readTextAsync(sampleFile);
@@ -57,9 +57,7 @@
                 simpleListView.itemDataSource = dataList.dataSource;
 
             });
-        } catch (e) {
-            read(roamingFolder);
-        }
+       
         return dataList;
     };
 
@@ -88,12 +86,24 @@
                 });
     };
 
+    var createFolder = function (roamingFolder) {
+        var folder = Windows.Storage.ApplicationData.current.roamingFolder;
+        folder.getFileAsync('dataFile.txt').then(function (file) {
+            read(folder);
+        }, function (e) {
+            roamingFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
+                .then(function (file) {
+                    return Windows.Storage.FileIO.writeTextAsync(file, "");
+                });
+        });
+    }
+
     var publicMembers =
         {
             write: write,
             read: read,
             removeSelectedLinks: removeSelectedLinks,
-
+            createFolder: createFolder,
         };
     WinJS.Namespace.define("DataManager", publicMembers);
 

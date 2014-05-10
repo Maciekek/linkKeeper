@@ -14,80 +14,80 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\JSON_windows8\LinkKeeper\bin\Release\AppxManifest.xml">
+    <AppXManifest Include="D:\linkKeeper\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-10T11:17:40.065</Modified>
+      <Modified>2014-05-10T11:29:50.518</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\css\default.css">
+    <AppxPackagedFile Include="D:\linkKeeper\css\default.css">
       <PackagePath>css\default.css</PackagePath>
       <Modified>2014-05-10T11:14:30.601</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\pages\addLink\addLink.css">
+    <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.css">
       <PackagePath>pages\addLink\addLink.css</PackagePath>
       <Modified>2014-05-10T11:15:58.129</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\pages\home\home.css">
+    <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
       <Modified>2014-05-10T11:16:28.107</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\images\logo.scale-100.png">
+    <AppxPackagedFile Include="D:\linkKeeper\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-21T20:19:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\images\smalllogo.scale-100.png">
+    <AppxPackagedFile Include="D:\linkKeeper\images\smalllogo.scale-100.png">
       <PackagePath>images\smalllogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-21T20:19:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\images\splashscreen.scale-100.png">
+    <AppxPackagedFile Include="D:\linkKeeper\images\splashscreen.scale-100.png">
       <PackagePath>images\splashscreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-21T20:19:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\images\storelogo.scale-100.png">
+    <AppxPackagedFile Include="D:\linkKeeper\images\storelogo.scale-100.png">
       <PackagePath>images\storelogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-21T20:19:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\js\dataManager.js">
+    <AppxPackagedFile Include="D:\linkKeeper\js\dataManager.js">
       <PackagePath>js\dataManager.js</PackagePath>
-      <Modified>2014-05-10T11:17:14.192</Modified>
+      <Modified>2014-05-10T11:35:34.228</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\js\default.js">
+    <AppxPackagedFile Include="D:\linkKeeper\js\default.js">
       <PackagePath>js\default.js</PackagePath>
       <Modified>2014-05-10T11:14:30.518</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\js\navigator.js">
+    <AppxPackagedFile Include="D:\linkKeeper\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
       <Modified>2014-05-10T11:14:30.741</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\pages\addLink\addLink.js">
+    <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.js">
       <PackagePath>pages\addLink\addLink.js</PackagePath>
       <Modified>2014-05-10T11:16:16.433</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\pages\home\home.js">
+    <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-05-10T11:16:39.983</Modified>
+      <Modified>2014-05-10T11:35:37.762</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\pages\addLink\addLink.html">
+    <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.html">
       <PackagePath>pages\addLink\addLink.html</PackagePath>
       <Modified>2014-05-10T11:16:08.971</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\pages\home\home.html">
+    <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
       <Modified>2014-05-10T11:16:34.187</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\default.html">
+    <AppxPackagedFile Include="D:\linkKeeper\default.html">
       <PackagePath>default.html</PackagePath>
       <Modified>2014-05-10T11:14:30.530</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\JSON_windows8\LinkKeeper\bin\Release\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="D:\linkKeeper\bin\Release\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-05-10T11:17:39.889</Modified>
+      <Modified>2014-05-10T11:29:50.432</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
