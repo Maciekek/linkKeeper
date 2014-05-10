@@ -10,23 +10,37 @@
 
     var write = function (roamingFolder, nameRetrieved, linkRetrieved) {
         console.log("JESTEM WRITE");
-
-
-        console.log(sizeDB);
-        console.log(db[0]);
-
-        roamingFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
+        
+        
+        WinJS.xhr({ url: linkRetrieved })
+           .done(function complete(result) {
+               // Report download.
+               console.log("xhr");
+               
+               var title = result.responseText.match(/<title>.*<.title>/);
+               title = title.toString();
+               title = title.replace("<title>", "");
+               title = title.replace("</title>", "");
+               if (title.length > 15) {
+                   title = title.slice(0, 15);
+                   title = title.concat("...");
+               }
+               
+               console.log(title);
+               roamingFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
                 .then(function (file) {
                     var newLink_ = {
                         id: ++sizeDB,
                         link: linkRetrieved,
-                        name: nameRetrieved
+                        name: nameRetrieved,
+                        title: title
                     };
                     db.push(newLink_);
                     return Windows.Storage.FileIO.writeTextAsync(file, JSON.stringify(db));
                 }).done(function () {
-                    //read(roamingFolder);
+                    read(roamingFolder);
                 });
+           });
     };
 
     var read = function (roamingFolder) {
@@ -60,6 +74,16 @@
        
         return dataList;
     };
+
+    var getPageTitle = function () {
+        WinJS.xhr({ url: "http://allegro.pl/samsung-galaxy-s4-i9500-gw24-bez-simlocka-i4221767733.html" })
+            .done(function complete(result) {
+                // Report download.
+                console.log("xhr");
+                console.log(result.responseText.match(/<title>.*<.title>/));
+
+            });
+    }
 
 
     var removeSelectedLinks = function (itemsToDelete, number) {
