@@ -13,3 +13,12 @@ pages\addLink\addLink.js
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js
+pages\settings\about.css
+pages\settings\about.html
+pages\settings\about.js
+pages\settings\clear\clear.css
+pages\settings\clear\clear.html
+pages\settings\clear\clear.js
+pages\settings\data\data.css
+pages\settings\data\data.html
+pages\settings\data\data.js

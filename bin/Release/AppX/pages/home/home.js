@@ -26,8 +26,6 @@
             var listView = document.getElementById("basicListView");
             listView.addEventListener("selectionchanging", this.showClickHandler, false);
            
-            var statusFiled = document.getElementById("status");
-            statusFiled.innerHTML = "Trwa ładowanie linku...";
             DataManager.createFolder(roamingFolder);
                 //test();
             

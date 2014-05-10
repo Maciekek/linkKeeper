@@ -70,6 +70,15 @@
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
     <Content Include="default.html" />
+    <Content Include="pages\settings\about.css" />
+    <Content Include="pages\settings\about.html" />
+    <Content Include="pages\settings\about.js" />
+    <Content Include="pages\settings\clear\clear.css" />
+    <Content Include="pages\settings\clear\clear.html" />
+    <Content Include="pages\settings\clear\clear.js" />
+    <Content Include="pages\settings\data\data.css" />
+    <Content Include="pages\settings\data\data.html" />
+    <Content Include="pages\settings\data\data.js" />
     <None Include="LinkKeeper_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

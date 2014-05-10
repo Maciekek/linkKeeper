@@ -25,15 +25,21 @@
                    title = title.slice(0, 15);
                    title = title.concat("...");
                }
-               console.log(title);
-               
+               var date = "";
+               if (getSavingDateStatus()) {
+                   console.log("DODAJE DATE");
+                   date = new Date();
+                   date = date.toString().slice(0, 10);
+               }
+
                roamingFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
                 .then(function (file) {
                     var newLink_ = {
                         id: ++sizeDB,
                         link: linkRetrieved,
                         name: nameRetrieved,
-                        title: title
+                        title: title,
+                        date: date,
                     };
                     db.push(newLink_);
                     
@@ -63,9 +69,7 @@
 
                 var json_file = JSON.parse(content);
                 sizeDB = json_file.length;
-                console.log(sizeDB);
                 db = json_file;
-                console.log(db);
                 dataList = new WinJS.Binding.List(db);
 
 
@@ -73,13 +77,11 @@
                 simpleListView.itemDataSource = dataList.dataSource;
 
             });
-            var statusFiled = document.getElementById("status");
-            statusFiled.innerHTML = "";
+            
         return dataList;
     };
 
     var removeSelectedLinks = function (itemsToDelete, number) {
-        console.log("---remove method---");
         delete db[number];
 
         var contentToSave = JSON.stringify(db);
@@ -87,13 +89,11 @@
         contentToSave = contentToSave.replace("null,", "");
         contentToSave = contentToSave.replace(",null", "");
         contentToSave = contentToSave.replace("null", "");
-        console.log(contentToSave);
 
         roamingFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
                 .then(function (file) {
                     return Windows.Storage.FileIO.writeTextAsync(file, contentToSave);
                 }).done(function () {
-                    console.log("zapis udany");
                     try {
                         read(roamingFolder);
                     } catch (e) {
@@ -114,12 +114,41 @@
         });
     }
 
+    var clearAllData = function () {
+        var applicationData = Windows.Storage.ApplicationData.current;
+        var roamingFolder = applicationData.roamingFolder;
+
+        roamingFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
+         .then(function (file) {
+             db = [];
+             return Windows.Storage.FileIO.writeTextAsync(file, "");
+         });
+    }
+
+    var savingDate = function (status) {
+        var applicationData = Windows.Storage.ApplicationData.current;
+        var roamingSettings = applicationData.roamingSettings;
+        roamingSettings.values["date"] = status;
+        var result = roamingSettings.values["date"];
+        console.log(result);
+    };
+
+    var getSavingDateStatus = function () {
+        var applicationData = Windows.Storage.ApplicationData.current;
+        var roamingSettings = applicationData.roamingSettings;
+        var result = roamingSettings.values["date"];
+        return result;
+    }
+
     var publicMembers =
         {
             write: write,
             read: read,
             removeSelectedLinks: removeSelectedLinks,
             createFolder: createFolder,
+            clearAllData: clearAllData,
+            savingDate: savingDate,
+            getSavingDateStatus: getSavingDateStatus,
         };
     WinJS.Namespace.define("DataManager", publicMembers);
 

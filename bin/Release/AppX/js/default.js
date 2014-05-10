@@ -44,5 +44,25 @@
         app.sessionState.history = nav.history;
     };
 
+    app.onsettings = function (e) {
+        e.detail.applicationcommands = {
+            "about": {
+                href: "/pages/settings/about.html",
+                title: "not about"
+            },
+            "clear": {
+                href: "/pages/settings/clear/clear.html",
+                title: "Clear all data"
+            },
+            "data": {
+                href: "/pages/settings/data/data.html",
+                title: "Saving preferences"
+            }
+
+        }
+
+        WinJS.UI.SettingsFlyout.populateSettings(e);
+    }
+
     app.start();
 })();

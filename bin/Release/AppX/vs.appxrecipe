@@ -6,7 +6,7 @@
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>31762cd0-b83e-4525-9981-bd4f57c46f4e</PackageIdentityName>
-    <RegisteredManifestChecksum>D346586F2BF817E13C605788A4C41504A6901D462668AD428E1153C12D58F5C0</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>80D11875C9AD0428E5E470C30BF3672658BCCA6B333D31D820163942CF2A4BD5</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>31762cd0-b83e-4525-9981-bd4f57c46f4e_1.0.0.0_neutral__p80arcj9kjwz8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>31762cd0-b83e-4525-9981-bd4f57c46f4e_p80arcj9kjwz8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>31762cd0-b83e-4525-9981-bd4f57c46f4e</RegisteredPackageID>
@@ -17,13 +17,13 @@
     <AppXManifest Include="D:\linkKeeper\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-10T11:29:50.518</Modified>
+      <Modified>2014-05-10T21:10:36.004</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\linkKeeper\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2014-05-10T11:14:30.601</Modified>
+      <Modified>2014-05-10T20:55:17.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.css">
       <PackagePath>pages\addLink\addLink.css</PackagePath>
@@ -31,7 +31,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2014-05-10T11:16:28.107</Modified>
+      <Modified>2014-05-10T20:58:10.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\about.css">
+      <PackagePath>pages\settings\about.css</PackagePath>
+      <Modified>2014-05-10T17:42:26.052</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\clear\clear.css">
+      <PackagePath>pages\settings\clear\clear.css</PackagePath>
+      <Modified>2014-05-10T17:45:36.138</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.css">
+      <PackagePath>pages\settings\data\data.css</PackagePath>
+      <Modified>2014-05-10T21:09:57.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
@@ -55,11 +67,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\js\dataManager.js">
       <PackagePath>js\dataManager.js</PackagePath>
-      <Modified>2014-05-10T15:32:07.556</Modified>
+      <Modified>2014-05-10T21:44:34.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-05-10T11:14:30.518</Modified>
+      <Modified>2014-05-10T21:10:33.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -71,23 +83,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-05-10T15:29:15.779</Modified>
+      <Modified>2014-05-10T15:38:08.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\about.js">
+      <PackagePath>pages\settings\about.js</PackagePath>
+      <Modified>2014-05-10T17:43:47.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\clear\clear.js">
+      <PackagePath>pages\settings\clear\clear.js</PackagePath>
+      <Modified>2014-05-10T20:38:03.299</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.js">
+      <PackagePath>pages\settings\data\data.js</PackagePath>
+      <Modified>2014-05-10T21:31:14.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.html">
       <PackagePath>pages\addLink\addLink.html</PackagePath>
-      <Modified>2014-05-10T11:16:08.971</Modified>
+      <Modified>2014-05-10T21:38:23.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-05-10T15:22:39.877</Modified>
+      <Modified>2014-05-10T21:40:15.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2014-05-10T11:14:30.530</Modified>
+      <Modified>2014-05-10T20:55:16.985</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\about.html">
+      <PackagePath>pages\settings\about.html</PackagePath>
+      <Modified>2014-05-10T17:44:23.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\clear\clear.html">
+      <PackagePath>pages\settings\clear\clear.html</PackagePath>
+      <Modified>2014-05-10T20:45:05.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.html">
+      <PackagePath>pages\settings\data\data.html</PackagePath>
+      <Modified>2014-05-10T21:20:31.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\bin\Release\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-05-10T11:29:50.432</Modified>
+      <Modified>2014-05-10T21:10:35.812</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

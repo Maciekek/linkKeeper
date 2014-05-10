@@ -29,9 +29,6 @@
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\clear\clear.css">
       <PackagePath>pages\settings\clear\clear.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.css">
-      <PackagePath>pages\settings\data\data.css</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -69,9 +66,6 @@
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\clear\clear.js">
       <PackagePath>pages\settings\clear\clear.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.js">
-      <PackagePath>pages\settings\data\data.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.html">
       <PackagePath>pages\addLink\addLink.html</PackagePath>
     </AppxPackagedFile>
@@ -86,9 +80,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\clear\clear.html">
       <PackagePath>pages\settings\clear\clear.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.html">
-      <PackagePath>pages\settings\data\data.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\bin\Release\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>

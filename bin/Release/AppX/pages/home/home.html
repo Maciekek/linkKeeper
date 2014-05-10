@@ -20,10 +20,10 @@
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">linkSaver</span>
+                <span class="pagetitle">Keep your link</span>
             </h1>
         </header>
-        <section aria-label="Main content" role="main" style="margin-top: 10px;">
+        <section aria-label="Main content" role="main" style="margin-top: 10px; margin-bottom: 216px;">
             <div id="mediumListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="width: 1047px;">
                 <div style="width: 150px; height: 100px;">
 
@@ -34,19 +34,18 @@
                                 <h4 data-win-bind="innerText: name"></h4>
                                 <h6 class="link" data-win-bind="innerText: link"></h6>
                                 <h6 class="title" data-win-bind="innerText: title"></h6>
+                                <h6 class="date" data-win-bind="innerText: date"></h6>
                             </button>
 
                         </div>
                     </div>
                 </div>
             </div>
-
             <div id="basicListView" data-win-control="WinJS.UI.ListView" data-win-options="{
                 tapBehavior: 'toggleSelect',
                 itemsReorderable: true,
-                layout: { type: WinJS.UI.GridLayout } }">
+                layout: { type: WinJS.UI.GridLayout } }" style="position: relative;">
             </div>
-            <div id="status"></div>
 
         </section>
     </div>
