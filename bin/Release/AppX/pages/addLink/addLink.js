@@ -45,6 +45,8 @@
                 var link = eventInfo.target;
                 link.href = "/pages/home/home.html";
                 WinJS.Navigation.navigate(link.href);
+
+
             }
         },
 

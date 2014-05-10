@@ -11,7 +11,7 @@
     var write = function (roamingFolder, nameRetrieved, linkRetrieved) {
         console.log("JESTEM WRITE");
         
-        
+       
         WinJS.xhr({ url: linkRetrieved })
            .done(function complete(result) {
                // Report download.
@@ -25,8 +25,8 @@
                    title = title.slice(0, 15);
                    title = title.concat("...");
                }
-               
                console.log(title);
+               
                roamingFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
                 .then(function (file) {
                     var newLink_ = {
@@ -36,8 +36,10 @@
                         title: title
                     };
                     db.push(newLink_);
+                    
                     return Windows.Storage.FileIO.writeTextAsync(file, JSON.stringify(db));
                 }).done(function () {
+                    
                     read(roamingFolder);
                 });
            });
@@ -71,20 +73,10 @@
                 simpleListView.itemDataSource = dataList.dataSource;
 
             });
-       
+            var statusFiled = document.getElementById("status");
+            statusFiled.innerHTML = "";
         return dataList;
     };
-
-    var getPageTitle = function () {
-        WinJS.xhr({ url: "http://allegro.pl/samsung-galaxy-s4-i9500-gw24-bez-simlocka-i4221767733.html" })
-            .done(function complete(result) {
-                // Report download.
-                console.log("xhr");
-                console.log(result.responseText.match(/<title>.*<.title>/));
-
-            });
-    }
-
 
     var removeSelectedLinks = function (itemsToDelete, number) {
         console.log("---remove method---");

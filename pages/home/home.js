@@ -26,8 +26,7 @@
             var listView = document.getElementById("basicListView");
             listView.addEventListener("selectionchanging", this.showClickHandler, false);
            
-           
-                DataManager.createFolder(roamingFolder);
+            DataManager.createFolder(roamingFolder);
                 //test();
             
         },
