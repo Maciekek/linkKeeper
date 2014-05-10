@@ -1,0 +1,15 @@
+css\default.css
+default.html
+images\logo.scale-100.png
+images\smalllogo.scale-100.png
+images\splashscreen.scale-100.png
+images\storelogo.scale-100.png
+js\dataManager.js
+js\default.js
+js\navigator.js
+pages\addLink\addLink.css
+pages\addLink\addLink.html
+pages\addLink\addLink.js
+pages\home\home.css
+pages\home\home.html
+pages\home\home.js

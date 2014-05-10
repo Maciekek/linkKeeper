@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>addLink</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <script src="/js/dataManager.js"></script>
+    <link href="addLink.css" rel="stylesheet" />
+    <script src="addLink.js"></script>
+</head>
+<body>
+    <div class="addLink fragment">
+        <header aria-label="Header content" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Addlink</span>
+            </h1>
+        </header>
+        <section class="form" aria-label="Add link" role="main">
+            <div>
+                <span style="width: 418px;">Input here your link path:</span>
+            </div>
+            <div style="height: 250px;">
+                <textarea id="nameInput"></textarea>
+            </div>
+            <div>
+                <span style="width: 418px; height: 59px;">Input here description of your link:</span>
+            </div>
+            <div>
+                <textarea id="linkInput"></textarea>
+            </div>
+
+        </section>
+    </div>
+    <span style="display: block; position: fixed; left: 1029px; top: 687.32px; right: 199px; bottom: 9.98px;">
+        <button id="saveLinkButton" style="display: inline; width: 130px; height: 66.05px;">Add link</button>
+    </span>
+</body>
+</html>
