@@ -18,7 +18,7 @@
     });
 
     function afterSettingsHide() {
-        console.log(document.getElementById("bacon").value);
+        
     };
 
 })();

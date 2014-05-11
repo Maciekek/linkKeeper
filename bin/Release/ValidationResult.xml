@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="Maciekek" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1045" VALIDATION_TYPE="UI" ReportGenerationTime="2014-05-11 17:38:16" ID="bccdb6c5aac61a14265297ae928dc3d0">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Test czystej instalacji odwracalnej" RATIONALE="Czysta, odwracalna instalacja pozwala użytkownikom na skuteczne zarządzanie aplikacjami (ich wdrażanie i usuwanie) w systemie." />
+    <REQUIREMENT NUMBER="2" TITLE="Test instalacji w poprawnych folderach" RATIONALE="System Windows udostępnia konkretne lokalizacje w systemie plików służące do przechowywania składników oprogramowania, udostępnianych danych aplikacji oraz danych aplikacji specyficznych dla użytkownika." />
+    <REQUIREMENT NUMBER="3" TITLE="Test pliku podpisanego cyfrowo" RATIONALE="Podpis cyfrowy Authenticode pozwala zagwarantować użytkownikom autentyczność danego oprogramowania oraz umożliwia sprawdzenie, czy określony plik został zmodyfikowany, na przykład w wyniku zainfekowania wirusem." />
+    <REQUIREMENT NUMBER="4" TITLE="Test obsługi wersji x64 systemu Windows" RATIONALE="Aby zachować zgodność z 64-bitowymi wersjami systemu Windows, aplikacje muszą w sposób macierzysty obsługiwać platformę 64-bitowych lub co najmniej 32-bitowych aplikacji systemu Windows w celu zagwarantowania bezproblemowego działania w środowisku 64-bitowym." />
+    <REQUIREMENT NUMBER="5" TITLE="Test sprawdzania wersji systemu operacyjnego" RATIONALE="Aplikacje nie mogą wykonywać operacji sprawdzania wersji przy użyciu operatora równości (== 5.1). Jeśli jest wymagana określona funkcja, należy sprawdzić, czy jest ona dostępna. Jeśli jest potrzebny system Windows XP, należy sprawdzić obecność systemu Windows XP lub nowszego (&gt;= 5.1), dzięki czemu kod realizujący wykrywanie będzie działać również w przyszłych wersjach systemu Windows. Instalatory sterowników i moduły odinstalowywania nie mogą sprawdzać wersji systemu operacyjnego." />
+    <REQUIREMENT NUMBER="6" TITLE="Test kontroli konta użytkownika" RATIONALE="Większość aplikacji nie wymaga uprawnień administratora w czasie wykonywania i powinna działać prawidłowo na koncie użytkownika standardowego. Aplikacje systemu Windows muszą mieć określony manifest (wbudowany lub zewnętrzny) definiujący poziom ich wykonywania i umożliwiający systemowi operacyjnemu ustalenie uprawnień wymaganych do uruchomienia aplikacji." />
+    <REQUIREMENT NUMBER="7" TITLE="Zachowanie zgodności z komunikatami menedżera ponownego uruchamiania" RATIONALE="W przypadku krytycznego zamknięcia aplikacje zwracające wartość FALSE (FAŁSZ) w odpowiedzi na komunikat WM_QUERYENDSESSION otrzymują komunikat WM_ENDSESSION i zostają zamknięte, natomiast te, które przekraczają limit czasu odpowiedzi na komunikat WM_QUERYENDSESSION, zostają zakończone." />
+    <REQUIREMENT NUMBER="8" TITLE="Test trybu awaryjnego" RATIONALE="W trybie awaryjnym większość sterowników i usług, które nie zostały wstępnie zainstalowane wraz z systemem Windows, nie jest domyślnie uruchamiana. Powinny one pozostać wyłączone, o ile nie są wymagane do realizacji podstawowych działań systemu bądź też dla celów diagnostyki i odzyskiwania." />
+    <REQUIREMENT NUMBER="9" TITLE="Test sesji wielu użytkowników" RATIONALE="Użytkownicy systemu Windows powinni mieć możliwość uruchamiania współbieżnych sesji bez powodowania konfliktów i zakłóceń. Aplikacje muszą gwarantować, że uruchomienie wielu sesji, zarówno lokalnych, jak i zdalnych, nie ma wpływu na ich normalne funkcjonowanie. Ustawienia aplikacji i pliki danych nie powinny być utrwalane między wieloma użytkownikami. Obszar prywatności i preferencji użytkownika powinien pozostawać odizolowany w ramach sesji danego użytkownika." />
+    <REQUIREMENT NUMBER="10" TITLE="Test awarii i zawieszania się systemu" RATIONALE="Błędy aplikacji, takie jak awarie czy zawieszenia, znacznie utrudniają pracę użytkowników i stanowią źródło ich frustracji. Wyeliminowanie tych błędów zwiększa stabilność i niezawodność aplikacji oraz podnosi ogólny komfort jej użytkowania.">
+      <TEST INDEX="47" NAME="Testy uruchamiania aplikacji" DESCRIPTION="Testy uruchamiania aplikacji." EXECUTIONTIME="00h:00m:25s.67ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="21" NAME="Awarie i zawieszanie się systemu" DESCRIPTION="Podczas testowania komponenty nie mogą się zawieszać ani ulegać awarii." EXECUTIONTIME="00h:00m:06s.60ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Test zgodności i odporności" RATIONALE="W momencie wykrycia przez system Windows niezgodnego sposobu działania aplikacji jest stosowana poprawka zgodności wymuszająca prawidłowe działanie aplikacji i zapewniająca użytkownikowi możliwość wykonywania właściwych czynności. Aplikacje nie powinny polegać na tym mechanizmie, ponieważ jest on stosowany jedynie w celu zapewnienia prawidłowego działania starszych aplikacji w systemie Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="Test zgodności pakietu" RATIONALE="Manifest pakietu nie zawierał co najmniej jednego wymaganego atrybutu.">
+      <TEST INDEX="31" NAME="Manifest aplikacji" DESCRIPTION="Manifest aplikacji musi zawierać prawidłowe wpisy dla wszystkich wymaganych pól." EXECUTIONTIME="00h:00m:05s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Test najlepszych rozwiązań w zakresie zabezpieczeń systemu Windows" RATIONALE="Aplikacja nie powinna zmieniać domyślnych ustawień zabezpieczeń systemu Windows." />
+    <REQUIREMENT NUMBER="14" TITLE="Test funkcji zabezpieczeń systemu Windows" RATIONALE="Aplikacje muszą korzystać z funkcji zabezpieczeń systemu Windows.">
+      <TEST INDEX="33" NAME="Analizator binarny" DESCRIPTION="Analiza funkcji zabezpieczeń włączonych dla plików binarnych." EXECUTIONTIME="00h:00m:03s.26ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="70" NAME="Analizator wykluczonych plików" DESCRIPTION="Analiza aplikacji w celu wykrycia znanych niezabezpieczonych plików" EXECUTIONTIME="00h:00m:03s.54ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Podpisywanie kodu prywatnego" DESCRIPTION="Aplikacja nie powinna zawierać pakietu plików kluczy podpisywania kodu prywatnego." EXECUTIONTIME="00h:00m:04s.33ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Test obsługiwanych interfejsów API" RATIONALE="Aplikacja powinna się odwoływać jedynie do interfejsów API dozwolonych przez zestaw SDK systemu Windows dla aplikacji Sklepu Windows.">
+      <TEST INDEX="38" NAME="Obsługiwane interfejsy API" DESCRIPTION="Aplikacja sklepu Windows może korzystać jedynie z obsługiwanych interfejsów API platformy." EXECUTIONTIME="00h:00m:04s.75ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Test wydajności" RATIONALE="Aplikacja powinna być uruchamiana i zatrzymywana szybko i w sposób zapewniający odpowiednie reagowanie przy jednoczesnym umiarkowanym użyciu zasobów systemowych (procesora, operacji We/Wy na plikach, pamięci itp.) w celu umożliwienia szybkiego przełączania i wielozadaniowości między aplikacjami, które nie były wcześniej otwarte.">
+      <TEST INDEX="50" NAME="Generowanie bytecode" DESCRIPTION="Generowanie bytecode powinno przebiegać poprawnie w przypadku pakietów zawierających aplikację HTML5 Sklepu Windows." EXECUTIONTIME="00h:00m:03s.92ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="60" NAME="Zoptymalizowane odwołania do powiązań" DESCRIPTION="W przypadku korzystania z powiązań należy parametr WinJS.Binding.optimizeBindingReferences ustawić na wartość „prawda”, aby zoptymalizować użycie pamięci." EXECUTIONTIME="00h:00m:04s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="Test zasobów manifestu aplikacji" RATIONALE="Manifest pakietu aplikacji powinien zawierać prawidłowe zasoby zdefiniowane w pliku resources.pri, zgodnie ze specyfikacją pakowania aplikacji i schematem manifestu aplikacji.">
+      <TEST INDEX="45" NAME="Sprawdzanie poprawności zasobów aplikacji" DESCRIPTION="Pakiet powinien zawierać prawidłowe zasoby zdefiniowane w pliku resources.pri." EXECUTIONTIME="00h:00m:00s.63ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Weryfikacja znakowania" DESCRIPTION="W aplikacja nie powinny być używane obrazy domyślne zawarte w przykładach zestawu SDK systemu Windows lub w programie Visual Studio." EXECUTIONTIME="00h:00m:06s.17ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Test konfiguracji debugowania" RATIONALE="Aplikacja nie powinna instalować żadnych plików binarnych służących do debugowania.">
+      <TEST INDEX="46" NAME="Konfiguracja debugowania" DESCRIPTION="Aplikacja nie powinna instalować żadnych plików binarnych służących do debugowania." EXECUTIONTIME="00h:00m:05s.21ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="Test kodowania pliku" RATIONALE="Pliki pakietów zawierających aplikacje HTML5 Sklepu Windows muszą być odpowiednio zakodowane.">
+      <TEST INDEX="49" NAME="Kodowanie pliku UTF-8" DESCRIPTION="Pliki pakietów zawierających aplikacje HTML5 Sklepu Windows muszą być odpowiednio zakodowane." EXECUTIONTIME="00h:00m:05s.57ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Test funkcji Direct3D" RATIONALE="Aplikacje powinny poprawnie używać funkcji Direct3D.">
+      <TEST INDEX="51" NAME="Obsługa wersji funkcji Direct3D" DESCRIPTION="Aplikacje muszą prawidłowo wyświetlać zawartość na sprzęcie obsługującym funkcję Direct3D w wersji 9.1." EXECUTIONTIME="00h:00m:08s.31ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="71" NAME="Funkcja Trim Direct3D po wstrzymaniu" DESCRIPTION="Aplikacje muszą wywołać funkcję IDXGIDevice3::Trim() na tworzonych przez siebie urządzeniach Direct3D podczas obsługi powiadomień o wstrzymaniu." EXECUTIONTIME="00h:00m:00s.84ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="Test zadeklarowanych możliwości aplikacji" RATIONALE="Pakiety deklarujące specjalne możliwości będą musiały je potwierdzić w procesie dodawania.">
+      <TEST INDEX="52" NAME="Możliwości specjalne" DESCRIPTION="Pakiety deklarujące specjalne możliwości będą musiały je potwierdzić w procesie dodawania." EXECUTIONTIME="00h:00m:02s.66ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Weryfikacja metadanych środowiska wykonawczego systemu Windows" RATIONALE="Metadane źródeł wszystkich generacji muszą być zgodne i spójne.">
+      <TEST INDEX="56" NAME="Test atrybutu ExclusiveTo" DESCRIPTION="W klasie nie można zaimplementować interfejsu oznaczonego atrybutem ExclusiveTo w odniesieniu do innej klasy." EXECUTIONTIME="00h:00m:02s.56ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Test lokalizacji typu" DESCRIPTION="Typy muszą być zdefiniowane w pliku metadanych za pomocą najdłuższej odpowiadającej im przestrzeni nazw." EXECUTIONTIME="00h:00m:00s.77ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Test uwzględniania wielkości liter w nazwie typu" DESCRIPTION="Nazwy przestrzeni nazw i typów nie mogą się różnić jedynie wielkością liter." EXECUTIONTIME="00h:00m:00s.66ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Test poprawności nazwy typu" DESCRIPTION="Przestrzeń nazw systemu Windows może zawierać tylko typy systemowe. Globalna przestrzeń nazw nie może zawierać żadnych typów." EXECUTIONTIME="00h:00m:00s.77ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="Test ogólnej poprawności metadanych" DESCRIPTION="Pliki metadanych muszą spełniać różne wymagania, aby mogły zostać uznane za poprawne." EXECUTIONTIME="00h:00m:03s.15ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Test właściwości" DESCRIPTION="Nie można używać właściwości tylko do zapisu ani indeksatora. Typ odpowiednich metod pobierających i ustawiających musi być zgodny." EXECUTIONTIME="00h:00m:00s.69ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Test poprawności pakietu" RATIONALE="Weryfikacja zawartości pakietu aplikacji w celu zapewnienia poprawności.">
+      <TEST INDEX="63" NAME="Pliki odpowiednie dla platformy" DESCRIPTION="Aplikacja nie powinna instalować plików niezgodnych z docelową architekturą procesora." EXECUTIONTIME="00h:00m:04s.31ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="66" NAME="Sprawdzanie obsługiwanej struktury katalogów" DESCRIPTION="Zweryfikuj każdy plik w pakiecie, dla którego długość nazwy pliku powinna być krótsza niż wartość MAX_PATH." EXECUTIONTIME="00h:00m:01s.85ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="Obsługa wysokiej rozdzielczości DPI" RATIONALE="Aplikacja musi ustawić rozpoznawanie wartości DPI, aby zapewnić spójny wygląd interfejsu użytkownika dla różnych ustawień wyświetlania w wysokiej rozdzielczości DPI." />
+    <REQUIREMENT NUMBER="27" TITLE="Test użycia zasobów" RATIONALE="Zadania w tle WinJS muszą wywołać element close(), aby zwolnić zasób.">
+      <TEST INDEX="68" NAME="Test zadań w tle WinJS" DESCRIPTION="Zadania w tle WinJS muszą wywołać element close(), aby zwolnić zasób." EXECUTIONTIME="00h:00m:02s.95ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="23087Maciekek.LinkKeeper" Type="Application" Source="AppxPackage" Publisher="CN=5A694AC8-6257-47F1-8CB9-850ED85CBB31" Version="1.1.0.1" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\23087Maciekek.LinkKeeper_1.1.0.1_neutral__0wv9d4b4bnmba" PathEvidenceId="0xa" RNP="0x1" DNP="0xd" EvidenceId="0xa" Id="0000555147bee47c32873a128d01498d91cb00000904">
+        <Indicators>
+          <DirectoryIndicators>
+            <Directory Name="js" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\js" RNP="0x9" DNP="0xb" UniqueId="0x10" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
+            <Directory Name="pages" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages" RNP="0x9" DNP="0xb" UniqueId="0x16" Id="000019ff601290dc13568ff4c70ea07fd47a73f13ab3" />
+            <Directory Name="home" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\home" RNP="0x9" DNP="0xb" UniqueId="0x1a" Id="00007eb0baafbaaf8336d49e7c3224114d4f05b6a749" />
+            <Directory Name="addlink" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\addlink" RNP="0x9" DNP="0xb" UniqueId="0x17" Id="0000c4c3d2f3f34e43122aae3dad12c78aaf91ad3ef2" />
+            <Directory Name="settings" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings" RNP="0x9" DNP="0xb" UniqueId="0x1d" Id="0000640f24481574839ab34d85fad829617f870bbf93" />
+            <Directory Name="clear" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\clear" RNP="0x9" DNP="0xb" UniqueId="0x20" Id="0000cef25debdc685b13dfed241874ec82f2c246edc5" />
+            <Directory Name="data" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\data" RNP="0x9" DNP="0xb" UniqueId="0x23" Id="0000de9d69c78452a491717df626acede3b2f2b89869" />
+            <Directory Name="23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba" RNP="0x9" DNP="0xb" UniqueId="0xb" Id="000008dad69b1b1409adc64bc5a39488be14a15af304" />
+          </DirectoryIndicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba">
+              <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+                <Identity Name="23087Maciekek.LinkKeeper" Version="1.1.0.1" Publisher="CN=5A694AC8-6257-47F1-8CB9-850ED85CBB31" ProcessorArchitecture="neutral" />
+                <Properties>
+                  <DisplayName>Link Keeper</DisplayName>
+                  <PublisherDisplayName>Maciekek</PublisherDisplayName>
+                  <Logo>images\storelogo.png</Logo>
+                </Properties>
+                <Prerequisites>
+                  <OSMinVersion>6.3.0</OSMinVersion>
+                  <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+                </Prerequisites>
+                <Resources>
+                  <Resource Language="PL-PL" />
+                </Resources>
+                <Applications>
+                  <Application Id="App" StartPage="default.html">
+                    <m2:VisualElements DisplayName="Link Keeper" Description="LinkKeeper" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+                      <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="white" />
+                    </m2:VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClient" />
+                </Capabilities>
+                <Dependencies>
+                  <PackageDependency Name="Microsoft.WinJS.2.0" MinVersion="1.0.9600.16408" />
+                </Dependencies>
+              </Package>
+            </PackageManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000e503c7cb78fbe75b1a7e5915e5252975002e48b4">
+            <File Name="default.js" Id="00008e1712a9eb1902b8c9c7cdb2add7d64dc7fbfde1" Size="0x9b8" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\js\default.js" LongPathHash="00008cce8b07c87d72ac0f4b33c0961d22967f75defc" UniqueId="0x12" />
+            <File Name="home.js" Id="00006477d5d88e4df6c4a4b7bfd783837cd4ad2b6ae0" Size="0xbc5" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\home" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\home\home.js" LongPathHash="00003130c4d95b5a0c66e8e87aa3f14494a1e6955fb3" UniqueId="0x1c" />
+            <File Name="about.html" Id="0000dfb34c5bffb616b782e6776e15c8897ab7ff13d1" ShortName="ABOUT~1.HTM" Size="0x3bf" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\about.html" LongPathHash="0000f5874238d2589e0932cd98f786bd070a0bdf8763" UniqueId="0x1e" />
+            <File Name="navigator.js" Id="0000e8bd405855b499efc5e7854617d320dc0173ff80" ShortName="NAVIGA~1.JS" Size="0x1530" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\js\navigator.js" LongPathHash="000074154ba787f89903267cb09074678ac6d951f206" UniqueId="0x13" />
+            <File Name="about.js" Id="00003cf4c82e69c8f206750ef7dcd78b29c9483f1319" Size="0x26a" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\about.js" LongPathHash="00001afadc1661d37c8b9ed8f55f40e2ee83ecb27bcd" UniqueId="0x1f" />
+            <File Name="addLink.html" Id="000004b46df6e2f8607d671eaf8b649f79958eec6ab0" ShortName="ADDLIN~1.HTM" Size="0x53b" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\addLink" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\addlink\addlink.html" LongPathHash="0000cfb4db04e520ba32cc41e9ef9ff9b9dce1f52234" UniqueId="0x18" />
+            <File Name="addLink.js" Id="0000109c45fd3ca2aaae72028524d2369a54e1391cec" Size="0x100f" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\addLink" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\addlink\addlink.js" LongPathHash="0000410f3ce1da02c993f77ac429ed3bc768f0f3c4a8" UniqueId="0x19" />
+            <File Name="resources.pri" Id="000012c5308702d75fd6a3179c739df805c542869216" ShortName="RESOUR~1.PRI" Size="0x1100" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\resources.pri" LongPathHash="0000fef556ec4bd58732ecc2a4925e9455c974b64815" UniqueId="0xd" />
+            <File Name="default.html" Id="00007c0f7d12f4eef3fa6904a58f6bc353347495d516" ShortName="DEFAUL~1.HTM" Size="0x390" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\default.html" LongPathHash="0000bebf84faa485357475ba0602942bc43a2d752e13" UniqueId="0xc" />
+            <File Name="dataManager.js" Id="00007ddc4254ae42f9e671f70eccaa1aa279c32699ab" ShortName="DATAMA~1.JS" Size="0x1b97" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\js\datamanager.js" LongPathHash="000057be014a1e8a43021a1e62ec1423a83306169b6b" UniqueId="0x11" />
+            <File Name="home.html" Id="000039a2ac76282d181f7481d60076432b1ca50385f0" ShortName="HOME~1.HTM" Size="0xc2d" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\home" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\home\home.html" LongPathHash="00005c131bda75036e97cfcb3c7d435c3b1901d4e968" UniqueId="0x1b" />
+            <File Name="data.html" Id="0000a4a61e0494fdaa8d99bcb71202e27708f84b5f1d" ShortName="DATA~1.HTM" Size="0x3dc" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\data" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\data\data.html" LongPathHash="00004a1304dc0f015766469400bf236cf2d8b7dfb778" UniqueId="0x24" />
+            <File Name="clear.js" Id="00006c543562ce6604a8d00e2504f24f5c3e30f742af" Size="0x371" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\clear" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\clear\clear.js" LongPathHash="0000f8994531de05d426682187d4476777b86cdbcbfa" UniqueId="0x22" />
+            <File Name="data.js" Id="000019e73e5658e74afd14adfc3b2fea85244c0dea4f" Size="0x35b" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\data" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\data\data.js" LongPathHash="00008bbbe50f1d9ba4c79ba65b44f3bb056e149ecc47" UniqueId="0x25" />
+            <File Name="clear.html" Id="0000a22a26e942c7e89696c5b91364ee30ed115708c5" ShortName="CLEAR~1.HTM" Size="0x3ee" BinaryType="UNKNOWN" Created="05/11/2014 15:36:55" Modified="05/11/2014 15:36:55" Path="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\clear" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\23087maciekek.linkkeeper_1.1.0.1_neutral__0wv9d4b4bnmba\pages\settings\clear\clear.html" LongPathHash="00007b06d70463c56080090c474315dbff2a5d58edbf" UniqueId="0x21" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000555147bee47c32873a128d01498d91cb00000904" AnalysisVersion="1.60" DictionaryVersion="2.16" Type="Package" Id="23087Maciekek.LinkKeeper_1.1.0.1_neutral__0wv9d4b4bnmba">
+      <AitFile ErrorCode="0" Name="addLink.html" Id="000004b46df6e2f8607d671eaf8b649f79958eec6ab0">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="addLink.js" Id="0000109c45fd3ca2aaae72028524d2369a54e1391cec">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application.sessionState.navigationHistory" />
+          <AitFeature Name="WinJS.Navigation.history.backStack.slice" />
+          <AitFeature Name="WinJS.Navigation.history.current" />
+          <AitFeature Name="WinJS.Navigation.history.forwardStack.slice" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingSettings.values" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="data.js" Id="000019e73e5658e74afd14adfc3b2fea85244c0dea4f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Binding.optimizeBindingReferences" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.html" Id="000039a2ac76282d181f7481d60076432b1ca50385f0">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+          <AitFeature Name="WinJS.UI.BackButton" />
+          <AitFeature Name="WinJS.UI.GridLayout" />
+          <AitFeature Name="WinJS.UI.ListView" />
+          <AitFeature Name="document.activeElement.getElementsByTagName" />
+          <AitFeature Name="window.location.href" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="about.js" Id="00003cf4c82e69c8f206750ef7dcd78b29c9483f1319">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Binding.optimizeBindingReferences" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.js" Id="00006477d5d88e4df6c4a4b7bfd783837cd4ad2b6ae0">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="clear.js" Id="00006c543562ce6604a8d00e2504f24f5c3e30f742af">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Binding.optimizeBindingReferences" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.html" Id="00007c0f7d12f4eef3fa6904a58f6bc353347495d516">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="dataManager.js" Id="00007ddc4254ae42f9e671f70eccaa1aa279c32699ab">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.roamingFolder" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.replaceExisting" />
+          <AitFeature Name="Windows.Storage.FileIO.readTextAsync" />
+          <AitFeature Name="Windows.Storage.FileIO.writeTextAsync" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.js" Id="00008e1712a9eb1902b8c9c7cdb2add7d64dc7fbfde1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.populateSettings" />
+          <AitFeature Name="WinJS.Utilities.Scheduler" />
+          <AitFeature Name="Windows.ApplicationModel.Activation" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="clear.html" Id="0000a22a26e942c7e89696c5b91364ee30ed115708c5">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.SettingsFlyout" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.show" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="data.html" Id="0000a4a61e0494fdaa8d99bcb71202e27708f84b5f1d">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.SettingsFlyout" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.show" />
+          <AitFeature Name="WinJS.UI.ToggleSwitch" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="about.html" Id="0000dfb34c5bffb616b782e6776e15c8897ab7ff13d1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.SettingsFlyout" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.show" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="navigator.js" Id="0000e8bd405855b499efc5e7854617d320dc0173ff80">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Class.define" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Promise.as" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage" />
+          <AitFeature Name="WinJS.UI.Pages.render" />
+          <AitFeature Name="WinJS.Utilities.disposeSubTree" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="window.getComputedStyle" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

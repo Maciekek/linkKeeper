@@ -5,19 +5,19 @@
     <WindowsUser>Maciej</WindowsUser>
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>31762cd0-b83e-4525-9981-bd4f57c46f4e</PackageIdentityName>
-    <RegisteredManifestChecksum>80D11875C9AD0428E5E470C30BF3672658BCCA6B333D31D820163942CF2A4BD5</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>31762cd0-b83e-4525-9981-bd4f57c46f4e_1.0.0.0_neutral__p80arcj9kjwz8</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>31762cd0-b83e-4525-9981-bd4f57c46f4e_p80arcj9kjwz8!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>31762cd0-b83e-4525-9981-bd4f57c46f4e</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Maciej</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <PackageIdentityName>23087Maciekek.LinkKeeper</PackageIdentityName>
+    <RegisteredManifestChecksum>59DE3EC2058EF527F837EBDEF40C76F3BF043C557E701BDBD6C4F1E9A1261B13</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>23087Maciekek.LinkKeeper_1.1.0.0_neutral__0wv9d4b4bnmba</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>23087Maciekek.LinkKeeper_0wv9d4b4bnmba!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>23087Maciekek.LinkKeeper</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=5A694AC8-6257-47F1-8CB9-850ED85CBB31</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\linkKeeper\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-10T21:10:36.004</Modified>
+      <Modified>2014-05-11T15:12:48.527</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -48,30 +48,30 @@
     <AppxPackagedFile Include="D:\linkKeeper\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-21T20:19:32.000</Modified>
+      <Modified>2014-05-11T14:51:18.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\images\smalllogo.scale-100.png">
       <PackagePath>images\smalllogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-21T20:19:32.000</Modified>
+      <Modified>2014-05-11T14:52:20.566</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\images\splashscreen.scale-100.png">
       <PackagePath>images\splashscreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-21T20:19:32.000</Modified>
+      <Modified>2014-05-11T14:50:07.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\images\storelogo.scale-100.png">
       <PackagePath>images\storelogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-21T20:19:32.000</Modified>
+      <Modified>2014-05-11T14:53:08.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\js\dataManager.js">
       <PackagePath>js\dataManager.js</PackagePath>
-      <Modified>2014-05-10T21:44:34.110</Modified>
+      <Modified>2014-05-11T15:35:31.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-05-11T14:15:30.044</Modified>
+      <Modified>2014-05-11T15:01:33.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -79,7 +79,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.js">
       <PackagePath>pages\addLink\addLink.js</PackagePath>
-      <Modified>2014-05-11T09:19:54.838</Modified>
+      <Modified>2014-05-11T15:23:54.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
@@ -87,7 +87,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\about.js">
       <PackagePath>pages\settings\about.js</PackagePath>
-      <Modified>2014-05-10T17:43:47.958</Modified>
+      <Modified>2014-05-11T15:04:51.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\clear\clear.js">
       <PackagePath>pages\settings\clear\clear.js</PackagePath>
@@ -111,19 +111,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\about.html">
       <PackagePath>pages\settings\about.html</PackagePath>
-      <Modified>2014-05-10T17:44:23.530</Modified>
+      <Modified>2014-05-11T15:04:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\clear\clear.html">
       <PackagePath>pages\settings\clear\clear.html</PackagePath>
-      <Modified>2014-05-10T20:45:05.608</Modified>
+      <Modified>2014-05-11T14:21:00.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.html">
       <PackagePath>pages\settings\data\data.html</PackagePath>
-      <Modified>2014-05-11T08:20:43.982</Modified>
+      <Modified>2014-05-11T14:19:27.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\bin\Release\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-05-10T21:10:35.812</Modified>
+      <Modified>2014-05-11T15:16:16.698</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

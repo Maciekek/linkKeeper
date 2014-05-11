@@ -5,7 +5,7 @@
     <WindowsUser>Maciej</WindowsUser>
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>31762cd0-b83e-4525-9981-bd4f57c46f4e</PackageIdentityName>
+    <PackageIdentityName>23087Maciekek.LinkKeeper</PackageIdentityName>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\linkKeeper\bin\Release\AppxManifest.xml">
@@ -90,7 +90,7 @@
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.html">
       <PackagePath>pages\settings\data\data.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\linkKeeper\bin\Release\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="D:\linkKeeper\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

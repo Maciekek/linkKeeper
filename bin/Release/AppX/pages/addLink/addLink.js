@@ -14,7 +14,7 @@
                 current: WinJS.Navigation.history.current
             };
 
-            // Save history to state - simple!
+            
             WinJS.Application.sessionState.navigationHistory = navState;
 
             var linkSessionSave = Windows.Storage.ApplicationData.current.roamingSettings.values["link"];
@@ -36,9 +36,6 @@
             }
 
             
-
-           
-
         },
 
         unload: function () {

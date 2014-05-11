@@ -11,7 +11,6 @@
     var write = function (roamingFolder, nameRetrieved, linkRetrieved) {
         console.log("JESTEM WRITE");
         
-       
         WinJS.xhr({ url: linkRetrieved })
            .done(function complete(result) {
                // Report download.
@@ -21,8 +20,8 @@
                title = title.toString();
                title = title.replace("<title>", "");
                title = title.replace("</title>", "");
-               if (title.length > 15) {
-                   title = title.slice(0, 15);
+               if (title.length > 20) {
+                   title = title.slice(0, 20);
                    title = title.concat("...");
                }
                var date = "";
@@ -48,7 +47,40 @@
                     
                     read(roamingFolder);
                 });
-           });
+           }, function error(request) {
+               var title = "";
+               if (title.length > 20) {
+                   title = title.slice(0, 20);
+                   title = title.concat("...");
+               }
+               var date = "";
+               if (getSavingDateStatus()) {
+                   console.log("DODAJE DATE");
+                   date = new Date();
+                   date = date.toString().slice(0, 10);
+               }
+
+               roamingFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
+                .then(function (file) {
+                    var newLink_ = {
+                        id: ++sizeDB,
+                        link: linkRetrieved,
+                        name: nameRetrieved,
+                        title: title,
+                        date: date,
+                    };
+                    db.push(newLink_);
+
+                    return Windows.Storage.FileIO.writeTextAsync(file, JSON.stringify(db));
+                }).done(function () {
+
+                    read(roamingFolder);
+                });
+              
+           }); 
+            
+            
+        
     };
 
     var read = function (roamingFolder) {
@@ -64,17 +96,18 @@
                 console.dir(content.length);
                 if (content.length === 0) {
                     console.log("Plik najprawdopodobniej jest pusty...");
-                    return;
+
+                } else {
+
+                    var json_file = JSON.parse(content);
+                    sizeDB = json_file.length;
+                    db = json_file;
+                    dataList = new WinJS.Binding.List(db);
+
+                    simpleListView.itemTemplate = simpleTemplate;
+                    simpleListView.itemDataSource = dataList.dataSource;
                 };
 
-                var json_file = JSON.parse(content);
-                sizeDB = json_file.length;
-                db = json_file;
-                dataList = new WinJS.Binding.List(db);
-
-
-                simpleListView.itemTemplate = simpleTemplate;
-                simpleListView.itemDataSource = dataList.dataSource;
 
             });
             

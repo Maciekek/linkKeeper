@@ -7,10 +7,10 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="31762cd0-b83e-4525-9981-bd4f57c46f4e" Version="1.0.0.0" Publisher="CN=Maciej" ProcessorArchitecture="neutral" />
+  <Identity Name="23087Maciekek.LinkKeeper" Version="1.1.0.1" Publisher="CN=5A694AC8-6257-47F1-8CB9-850ED85CBB31" ProcessorArchitecture="neutral" />
   <Properties>
-    <DisplayName>LinkKeeper</DisplayName>
-    <PublisherDisplayName>Maciej</PublisherDisplayName>
+    <DisplayName>Link Keeper</DisplayName>
+    <PublisherDisplayName>Maciekek</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -18,12 +18,12 @@
     <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
   </Prerequisites>
   <Resources>
-    <Resource Language="EN-US" />
+    <Resource Language="PL-PL" />
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="LinkKeeper" Description="LinkKeeper" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
-        <m2:SplashScreen Image="images\splashscreen.png" />
+      <m2:VisualElements DisplayName="Link Keeper" Description="LinkKeeper" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+        <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="white" />
       </m2:VisualElements>
     </Application>
   </Applications>

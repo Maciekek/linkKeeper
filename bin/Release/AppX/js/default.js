@@ -21,7 +21,6 @@
 
             nav.history = app.sessionState.history || {};
             nav.history.current.initialPlaceholder = true;
-
             // Optimize the load of the application and while the splash screen is shown, execute high priority scheduled work.
             ui.disableAnimations();
             var p = ui.processAll().then(function () {
@@ -48,15 +47,18 @@
         e.detail.applicationcommands = {
             "clear": {
                 href: "/pages/settings/clear/clear.html",
-                title: "Clear all data"
+                title: "Wyczyść dane aplikacji"
             },
             "data": {
                 href: "/pages/settings/data/data.html",
-                title: "Saving preferences"
+                title: "Ustawienia zapisywanych danych"
+            },
+            "about": {
+            href: "/pages/settings/about.html",
+            title: "Privacy policy"
+            
             }
-
         }
-
         WinJS.UI.SettingsFlyout.populateSettings(e);
     }
 

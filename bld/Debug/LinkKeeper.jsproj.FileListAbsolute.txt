@@ -1,0 +1,15 @@
+D:\linkKeeper\bin\Debug\ReverseMap\resources.pri
+D:\linkKeeper\bin\Debug\AppxManifest.xml
+D:\linkKeeper\bin\Debug\LinkKeeper.build.appxrecipe
+D:\linkKeeper\bld\Debug\priconfig.xml
+D:\linkKeeper\bld\Debug\priconfig.xml.intermediate
+D:\linkKeeper\bld\Debug\layout.resfiles
+D:\linkKeeper\bld\Debug\layout.resfiles.intermediate
+D:\linkKeeper\bld\Debug\resources.resfiles
+D:\linkKeeper\bld\Debug\resources.resfiles.intermediate
+D:\linkKeeper\bld\Debug\pri.resfiles
+D:\linkKeeper\bld\Debug\pri.resfiles.intermediate
+D:\linkKeeper\bld\Debug\qualifiers.txt
+D:\linkKeeper\bld\Debug\qualifiers.txt.intermediate
+D:\linkKeeper\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\linkKeeper\bld\Debug\ProjectArchitectures.txt

@@ -13,7 +13,6 @@ D:\JSON_windows8\LinkKeeper\bld\Release\qualifiers.txt
 D:\JSON_windows8\LinkKeeper\bld\Release\qualifiers.txt.intermediate
 D:\JSON_windows8\LinkKeeper\bld\Release\MultipleQualifiersPerDimensionFound.txt
 D:\JSON_windows8\LinkKeeper\bld\Release\ProjectArchitectures.txt
-D:\linkKeeper\bin\Release\ReverseMap\resources.pri
 D:\linkKeeper\bin\Release\AppxManifest.xml
 D:\linkKeeper\bin\Release\LinkKeeper.build.appxrecipe
 D:\linkKeeper\bld\Release\priconfig.xml
@@ -28,3 +27,4 @@ D:\linkKeeper\bld\Release\qualifiers.txt
 D:\linkKeeper\bld\Release\qualifiers.txt.intermediate
 D:\linkKeeper\bld\Release\MultipleQualifiersPerDimensionFound.txt
 D:\linkKeeper\bld\Release\ProjectArchitectures.txt
+D:\linkKeeper\bin\Release\resources.pri

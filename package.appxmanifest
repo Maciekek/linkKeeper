@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
-  <Identity Name="31762cd0-b83e-4525-9981-bd4f57c46f4e" Version="1.0.0.0" Publisher="CN=Maciej" />
+  <Identity Name="23087Maciekek.LinkKeeper" Version="1.1.0.1" Publisher="CN=5A694AC8-6257-47F1-8CB9-850ED85CBB31" />
   <Properties>
-    <DisplayName>LinkKeeper</DisplayName>
-    <PublisherDisplayName>Maciej</PublisherDisplayName>
+    <DisplayName>Link Keeper</DisplayName>
+    <PublisherDisplayName>Maciekek</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,8 +15,8 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="LinkKeeper" Description="LinkKeeper" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
-        <m2:SplashScreen Image="images\splashscreen.png" />
+      <m2:VisualElements DisplayName="Link Keeper" Description="LinkKeeper" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+        <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="white" />
       </m2:VisualElements>
     </Application>
   </Applications>
