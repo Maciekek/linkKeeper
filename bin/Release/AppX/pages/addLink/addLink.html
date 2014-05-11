@@ -17,27 +17,21 @@
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Save your link</span>
+                <span class="pagetitle">Dodaj nowy link</span>
             </h1>
         </header>
-        <section class="form" aria-label="Add link" role="main">
-            <div>
-                <span style="width: 418px;">Input here your link path:</span>
-            </div>
-            <div style="height: 250px;">
-                <textarea id="nameInput"></textarea>
-            </div>
-            <div>
-                <span style="width: 418px; height: 59px;">Input here description of your link:</span>
-            </div>
-            <div>
-                <textarea id="linkInput"></textarea>
-            </div>
-
+        <section class="section"  aria-label="Dodaj nowy link" role="main" style="height: 589px;">
+            <div class="form">
+				<span class="linkInstruction" style="width: 418px;">Wklej lub wpisz tutaj link do strony którą chcesz zapisać</span>
+				<textarea id="nameInput"></textarea>
+				<span style="width: 418px; height: 59px;">Opisz swój link</span>
+				<textarea id="linkInput"></textarea>
+				
+			
+			</div>
+			<button id="saveLinkButton" >Dodaj</button>
         </section>
     </div>
-    <span style="display: block; position: fixed; left: 1029px; top: 687.32px; right: 199px; bottom: 9.98px;">
-        <button id="saveLinkButton" style="display: block; width: 130px; height: 66.05px;">Add link</button>
-    </span>
+   
 </body>
 </html>

@@ -27,11 +27,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.css">
       <PackagePath>pages\addLink\addLink.css</PackagePath>
-      <Modified>2014-05-10T11:15:58.129</Modified>
+      <Modified>2014-05-11T14:10:03.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2014-05-10T20:58:10.815</Modified>
+      <Modified>2014-05-11T13:43:50.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\about.css">
       <PackagePath>pages\settings\about.css</PackagePath>
@@ -71,7 +71,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-05-10T21:10:33.469</Modified>
+      <Modified>2014-05-11T14:15:30.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -79,11 +79,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.js">
       <PackagePath>pages\addLink\addLink.js</PackagePath>
-      <Modified>2014-05-10T15:28:59.069</Modified>
+      <Modified>2014-05-11T09:19:54.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-05-10T15:38:08.137</Modified>
+      <Modified>2014-05-11T13:39:31.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\about.js">
       <PackagePath>pages\settings\about.js</PackagePath>
@@ -99,11 +99,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\addLink\addLink.html">
       <PackagePath>pages\addLink\addLink.html</PackagePath>
-      <Modified>2014-05-10T21:38:23.455</Modified>
+      <Modified>2014-05-11T14:12:51.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-05-10T21:40:15.731</Modified>
+      <Modified>2014-05-11T13:43:50.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\default.html">
       <PackagePath>default.html</PackagePath>
@@ -119,7 +119,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\pages\settings\data\data.html">
       <PackagePath>pages\settings\data\data.html</PackagePath>
-      <Modified>2014-05-10T21:20:31.105</Modified>
+      <Modified>2014-05-11T08:20:43.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\linkKeeper\bin\Release\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>

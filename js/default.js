@@ -12,12 +12,12 @@
     app.addEventListener("activated", function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-                // TODO: This application has been newly launched. Initialize
-                // your application here.
+                console.log("22222");
             } else {
-                // TODO: This application has been reactivated from suspension.
-                // Restore application state here.
+                console.log("asdassds");
             }
+          
+            WinJS.Navigation.navigate("/pages/addLink.html");
 
             nav.history = app.sessionState.history || {};
             nav.history.current.initialPlaceholder = true;
@@ -46,21 +46,15 @@
 
     app.onsettings = function (e) {
         e.detail.applicationcommands = {
-            "about": {
-                href: "/pages/settings/about.html",
-                title: "not about"
-            },
             "clear": {
                 href: "/pages/settings/clear/clear.html",
-                title: "Clear all data"
+                title: "Wyczyść dane aplikacji"
             },
             "data": {
                 href: "/pages/settings/data/data.html",
-                title: "Saving preferences"
+                title: "Ustawienia zapisywanych danych"
             }
-
         }
-
         WinJS.UI.SettingsFlyout.populateSettings(e);
     }
 

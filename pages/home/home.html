@@ -20,7 +20,7 @@
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Keep your link</span>
+                <span class="pagetitle">Twoje linki</span>
             </h1>
         </header>
         <section aria-label="Main content" role="main" style="margin-top: 10px; margin-bottom: 216px;">
@@ -41,20 +41,18 @@
                     </div>
                 </div>
             </div>
-            <div id="basicListView" data-win-control="WinJS.UI.ListView" data-win-options="{
-                tapBehavior: 'toggleSelect',
-                itemsReorderable: true,
-                layout: { type: WinJS.UI.GridLayout } }" style="position: relative;">
-            </div>
+        	<div id="pole">
+        		<div id="basicListView" data-win-control="WinJS.UI.ListView" data-win-options="{itemsReorderable:true, layout:{type:WinJS.UI.GridLayout}, tapBehavior:'toggleSelect'}" style="position: relative;">
+        		</div>
+        	</div>
 
         </section>
     </div>
     <div id="scenarioAppBar" data-win-control="WinJS.UI.AppBar">
-        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdAdd',label:'Add',icon:'add',section:'global',extraClass:'singleSelect',tooltip:'Add item'}"></button>
-        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdSelectAll',label:'Select All',icon:'selectall',section:'selection',extraClass:'multiSelect',tooltip:'Select All'}"></button>
-        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdClearSelection',label:'Clear Selection',icon:'clearselection',section:'selection',extraClass:'multiSelect',tooltip:'Clear Selection'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdAdd',label:'Dodaj',icon:'add',section:'global',extraClass:'singleSelect',tooltip:'Add item'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdClearSelection',label:'Odznacz wszystko',icon:'clearselection',section:'selection',extraClass:'multiSelect',tooltip:'Clear Selection'}"></button>
         <hr data-win-control="WinJS.UI.AppBarCommand" data-win-options="{type:'separator',section:'selection',extraClass:'multiSelect'}" />
-        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdDelete',label:'Delete',icon:'delete',section:'selection',extraClass:'multiSelect',tooltip:'Delete item'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdDelete',label:'Usuń',icon:'delete',section:'selection',extraClass:'multiSelect',tooltip:'Delete item'}"></button>
     </div>
 </body>
 </html>

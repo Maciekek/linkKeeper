@@ -12,9 +12,6 @@
             var addLinkButton = document.getElementById("cmdAdd");
             addLinkButton.addEventListener("click", this.addLinkButtonClickHandler, false);
 
-            var saveLinkButton = document.getElementById("cmdSelectAll");
-            saveLinkButton.addEventListener("click", this.selectAllHandler, false);
-
             var saveLinkButton = document.getElementById("cmdClearSelection");
             saveLinkButton.addEventListener("click", this.deselectAllHandler, false);
 

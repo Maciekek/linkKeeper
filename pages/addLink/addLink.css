@@ -3,13 +3,25 @@
     margin-right: 120px;
 }
 
-
+.form {
+	padding:20px;
+	background-color: #337BBF;
+	position:relative;
+}
 #nameInput{
+    height:150px;
     width:98.22%;
-    height:210px;
 }
 
 #linkInput{
-   width:98.22%;
-    height:10px;
+	width:98.22%;
+    height:15%;
+}
+
+#saveLinkButton{
+	margin-top:20%;
+	margin-left:90%;
+	
+	
+	
 }

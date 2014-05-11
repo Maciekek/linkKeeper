@@ -8,14 +8,41 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
+            var navState = {
+                backStack: WinJS.Navigation.history.backStack.slice(0),
+                forwardStack: WinJS.Navigation.history.forwardStack.slice(0),
+                current: WinJS.Navigation.history.current
+            };
+
+            // Save history to state - simple!
+            WinJS.Application.sessionState.navigationHistory = navState;
+
+            var linkSessionSave = Windows.Storage.ApplicationData.current.roamingSettings.values["link"];
+            var nameSessionSave = Windows.Storage.ApplicationData.current.roamingSettings.values["name"];
+
             var saveLinkButton = document.getElementById("saveLinkButton");
             saveLinkButton.addEventListener("click", this.saveLinkButtonHandler, false);
 
+            var name = document.getElementById("linkInput");
+            name.addEventListener("change", this.saveNameSessionHandler, false);
+
+            var link = document.getElementById("nameInput");
+            link.addEventListener("change", this.saveLinkSessionHandler, false);
+
+            if (linkSessionSave.length > 0 && nameSessionSave.length > 0) {
+                console.log("podmieniam");
+                link.value = linkSessionSave;
+                name.value = nameSessionSave;
+            }
+
+            
+
+           
 
         },
 
         unload: function () {
-            // TODO: Respond to navigations away from this page.
+            
         },
 
         updateLayout: function (element) {
@@ -39,7 +66,9 @@
                     "http://".concat(link);
                     DataManager.write(roamingFolder, name, "http://".concat(link));
                 }
-
+                Windows.Storage.ApplicationData.current.roamingSettings.values["link"] = "";
+                Windows.Storage.ApplicationData.current.roamingSettings.values["name"] = "";
+                
 
                 eventInfo.preventDefault();
                 var link = eventInfo.target;
@@ -49,6 +78,23 @@
 
             }
         },
+        saveNameSessionHandler: function () {
+            var name = document.getElementById("linkInput").value;
+            var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
+
+            Windows.Storage.ApplicationData.current.roamingSettings.values["name"] = name;
+
+            console.log(Windows.Storage.ApplicationData.current.roamingSettings.values["name"]);
+        },
+        saveLinkSessionHandler: function () {
+            var name = document.getElementById("nameInput").value;
+            var roamingSettings = Windows.Storage.ApplicationData.current.roamingSettings;
+
+            Windows.Storage.ApplicationData.current.roamingSettings.values["link"] = name;
+
+            console.log(Windows.Storage.ApplicationData.current.roamingSettings.values["link"]);
+        },
+
 
     });
 
